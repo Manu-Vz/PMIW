@@ -1,5 +1,6 @@
 // Creditos
 // Video Manuel Vasquez: https://youtu.be/nqPDbhxsaR4
+//Video Lisandro Scally: https://youtu.be/EHeRg3-IyfM
 
 
 // imagenes
