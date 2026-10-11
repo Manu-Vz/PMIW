@@ -33,7 +33,7 @@ function preload() {
   imgCuarto   = loadImage("./data/Cuarto.jpeg");
   imgcreditosfondo = loadImage("./data/fondonegro.jpeg");
 
-  // sprites paracreditos
+  // sprites para creditos
   imgLisandroScally= loadImage("./data/Personajeconpelolargo.jpeg");
   imgManuelVasquez     = loadImage("./data/Personajeconbarba.jpeg");
 
@@ -130,7 +130,7 @@ function cargarEscena() {
 
   image(nodo.fondo, 0, 0, width, height);
 
-  // ===== PANTALLA DE CRÉDITOS =====
+  // PANTALLA DE CRÉDITOS
   if (escenaActual === 11) {
     // Personajes
     image(imgLisandroScally, 80, 90, 140, 200);
@@ -166,11 +166,11 @@ function cargarEscena() {
   OpcionA = false;
   OpcionB = false;
 
-  if (nodo.OpcionA !== undefined) {
+  if (nodo.OpcionA) {
     OpcionA = true;
     dibujarBoton(PosA, nodo.TextoA);
   }
-  if (nodo.OpcionB !== undefined) {
+  if (nodo.OpcionB) {
     OpcionB = true;
     dibujarBoton(PosB, nodo.TextoB);
   }
@@ -192,7 +192,6 @@ function dibujarBoton(x, texto) {
 
 function mousePressed() {
   let nodo = escenas[escenaActual];
-  if (!nodo) return;
 
   // boton A
   if (OpcionA &&
