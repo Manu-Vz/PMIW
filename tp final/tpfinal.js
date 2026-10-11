@@ -1,3 +1,7 @@
+// Creditos
+// Video Manuel Vasquez: https://youtu.be/nqPDbhxsaR4
+
+
 // imagenes
 let imgFacultad, imgMarcha, imgCentro, imgPelicula, imgCarteles, imgAula, imgCuarto, imgCalle, imgcreditosfondo;
 let imgPersonajePeloLargo, imgPersonajeBarba;
@@ -192,6 +196,8 @@ function dibujarBoton(x, texto) {
 
 function mousePressed() {
   let nodo = escenas[escenaActual];
+  
+  
 
   // boton A
   if (OpcionA &&
